@@ -1,0 +1,55 @@
+# gitignore template for MSD/Terra Drupal projects
+
+# Ignore paths that may contain user-generated content
+web/sites/*/files
+privatefiles
+
+# Ignore paths that may contain temporary files
+web/sites/*/translations
+web/sites/*/tmp
+web/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+web/core
+
+# Profiles
+web/profiles/contrib
+
+# Themes
+web/themes/contrib
+
+# Libraries
+web/libraries
+
+# Scaffold files
+.editorconfig
+.gitattributes
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.htaccess
+web/index.php
+web/robots.txt
+web/sites/default/development.services.yml
+web/autoload.php
+web/sites/default/default.settings.php
+
+# Vendor
+/vendor
+
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules*/
+web/themes/custom/*/package-lock.json
+web/libraries/webcomponents/package-lock.json
+
+# .htaccess
+**/.htaccess
+
+# auth files
+auth.json
+
+# IDEs
+.idea
+.vscode
