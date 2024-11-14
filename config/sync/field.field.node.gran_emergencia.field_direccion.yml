@@ -1,0 +1,24 @@
+uuid: f3f6cd73-61dd-41f5-9a31-ecf07818cee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direccion
+    - filter.format.plain_text
+    - node.type.gran_emergencia
+  module:
+    - text
+id: node.gran_emergencia.field_direccion
+field_name: field_direccion
+entity_type: node
+bundle: gran_emergencia
+label: Direccion
+description: 'Campo para especificar la ubicación exacta de la emergencia, incluyendo calle, número, ciudad y cualquier otra referencia relevante.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text

@@ -1,0 +1,26 @@
+uuid: 5a7e5a7c-6774-48a5-a713-6257441f571f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.gran_emergencia
+  module:
+    - text
+id: node.gran_emergencia.body
+field_name: body
+entity_type: node
+bundle: gran_emergencia
+label: Alerta
+description: 'Campo para proporcionar una descripción detallada del incidente, incluyendo el tipo de emergencia, su gravedad y cualquier información relevante que deba ser comunicada a los ciudadanos. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

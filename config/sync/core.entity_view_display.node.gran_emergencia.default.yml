@@ -1,0 +1,74 @@
+uuid: 25e42438-4e97-470e-afdf-26168a29ee1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gran_emergencia.body
+    - field.field.node.gran_emergencia.field_coordenadas
+    - field.field.node.gran_emergencia.field_direccion
+    - field.field.node.gran_emergencia.field_fecha
+    - field.field.node.gran_emergencia.field_nivel_de_aviso
+    - field.field.node.gran_emergencia.field_tipo_de_aviso
+    - node.type.gran_emergencia
+  module:
+    - datetime
+    - geofield
+    - text
+    - user
+id: node.gran_emergencia.default
+targetEntityType: node
+bundle: gran_emergencia
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_coordenadas:
+    type: geofield_default
+    label: hidden
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_direccion:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fecha:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_nivel_de_aviso:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_tipo_de_aviso:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

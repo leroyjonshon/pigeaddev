@@ -1,0 +1,21 @@
+uuid: f6df373e-aaf7-49f2-b746-3fece0863986
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coordenadas
+    - node.type.gran_emergencia
+  module:
+    - geofield
+id: node.gran_emergencia.field_coordenadas
+field_name: field_coordenadas
+entity_type: node
+bundle: gran_emergencia
+label: Coordenadas
+description: 'Este campo permite almacenar coordenadas geográficas, útiles en situaciones de emergencias, donde se necesita registrar una ubicación específica en el sistema de Drupal.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

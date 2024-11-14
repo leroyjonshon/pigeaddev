@@ -1,0 +1,22 @@
+uuid: 13811dc2-5e53-4adf-a8e9-cc0ded8aba33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_aviso
+    - node.type.gran_emergencia
+  module:
+    - text
+id: node.gran_emergencia.field_tipo_de_aviso
+field_name: field_tipo_de_aviso
+entity_type: node
+bundle: gran_emergencia
+label: 'Tipo de Aviso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

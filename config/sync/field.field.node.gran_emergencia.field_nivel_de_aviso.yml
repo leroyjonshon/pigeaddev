@@ -1,0 +1,24 @@
+uuid: 7925f203-edd4-456b-856b-8bb53c2b917b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nivel_de_aviso
+    - filter.format.basic_html
+    - node.type.gran_emergencia
+  module:
+    - text
+id: node.gran_emergencia.field_nivel_de_aviso
+field_name: field_nivel_de_aviso
+entity_type: node
+bundle: gran_emergencia
+label: 'Nivel de Aviso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

@@ -1,0 +1,40 @@
+uuid: 696a136d-be47-473d-9488-be7cbc71ff8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gran_emergencia.body
+    - field.field.node.gran_emergencia.field_coordenadas
+    - field.field.node.gran_emergencia.field_direccion
+    - field.field.node.gran_emergencia.field_fecha
+    - field.field.node.gran_emergencia.field_nivel_de_aviso
+    - field.field.node.gran_emergencia.field_tipo_de_aviso
+    - node.type.gran_emergencia
+  module:
+    - text
+    - user
+id: node.gran_emergencia.teaser
+targetEntityType: node
+bundle: gran_emergencia
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_coordenadas: true
+  field_direccion: true
+  field_fecha: true
+  field_nivel_de_aviso: true
+  field_tipo_de_aviso: true
